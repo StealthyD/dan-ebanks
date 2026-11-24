@@ -400,6 +400,37 @@ h3 {
   max-width: 22ch;
 }
 
+.quote {
+  margin: 1.5rem 0 0;
+  max-width: 40rem;
+}
+
+.quote blockquote {
+  margin: 0;
+  padding: 0.15rem 0 0.15rem 1.2rem;
+  border-left: 3px solid var(--signal);
+}
+
+.quote p {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+}
+
+.quote figcaption {
+  margin-top: 1rem;
+  max-width: 36rem;
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+
+.quote time {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--muted);
+}
+
 .follow {
   margin-top: 1.35rem;
 }
@@ -710,7 +741,8 @@ h3 {
   }
 
   .portrait,
-  .offer {
+  .offer,
+  .quote blockquote {
     border: 1px solid CanvasText;
   }
 }
